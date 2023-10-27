@@ -25,10 +25,10 @@ canvas {
 }
 
 .cabecalho {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background: linear-gradient(to bottom, #eea3a3 0%,#490606 100%);
   padding:10px 0px;
-  margin-top:10px;
+  margin-top:3px;
   text-align:center;
   color:rgb(255, 1, 1);
   font-family: "Audiowide", sans-serif;
@@ -86,13 +86,13 @@ main {
   box-shadow: 3px 3px 0 var(--cinza);
   color: var(--branca);
   cursor: pointer;
-  height: 100px;
+  height: 75px;
   font-family: "Audiowide", sans-serif;
   font-size: 0.90em;
   font-weight:lighter;
   line-height: 80px;
   text-align: center;
-  width: 100px;
+  width: 85px;
 }
 
 .tecla.ativa,
