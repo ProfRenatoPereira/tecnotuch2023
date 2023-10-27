@@ -1,0 +1,206 @@
+:root {
+  --cinza: #aaa;
+  --vermelha: #e93d50;
+  --vermelha-escura: #af303f;
+  --branca: #fff;
+  --luz: rgb(random(0, 256), random(0, 256), random(0, 256));
+}
+
+canvas {
+  display: flexbox;
+  align-items: center;
+  
+}
+
+.corpo, html {
+  color:#F7F3F3;
+  margin: 0px;
+  padding: 0px opx;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to bottom, #eea3a3 0%, #490606 100%);
+  font-size:16px;
+  vertical-align: displayHeight;
+  height: displayHeight;
+  width: displayWidth;
+}
+
+.cabecalho {
+  font-size: 1.5rem;
+  background: linear-gradient(to bottom, #eea3a3 0%,#490606 100%);
+  padding:10px 0px;
+  margin-top:10px;
+  text-align:center;
+  color:rgb(255, 1, 1);
+  font-family: "Audiowide", sans-serif;
+  display:inline-block;
+  vertical-align: displayHeight;
+  height: displayHeight;
+  width: displayWidth;
+}
+
+.diretor {
+  align-items: center;
+  background: linear-gradient(45deg, #ff5c77 0%,#00b7c1 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 35vh;
+  min-width: 70vh;
+  vertical-align:top;
+}
+
+
+main {
+  align-items: center;
+  background: linear-gradient(45deg, #ff5c77 0%,#00b7c1 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  /*min-height: 5vh;
+  min-width: 70vh;*/
+  vertical-align:text-top;
+}
+
+
+.teclado {
+  background: linear-gradient(to bottom, #eea3a3 0%,#490606 100%);
+  align-items: center;
+  vertical-align: baseline-middle;
+  margin-top:5px;
+  box-shadow: -55px 20px 70px #eea3a3, 50px 100px 100px #490606;
+  border-radius: 70px;
+  display:grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 50px;
+  /*height: displayheight;*/
+  width: 0.4*displaywidth;
+  min-height: 50vh;
+}
+
+.tecla {
+  background: linear-gradient(to bottom, #eea3a3 0%,#490606 100%);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--cinza);
+  color: var(--branca);
+  cursor: pointer;
+  height: 100px;
+  font-family: "Audiowide", sans-serif;
+  font-size: 0.90em;
+  font-weight:lighter;
+  line-height: 80px;
+  text-align: center;
+  width: 100px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background: linear-gradient(to bottom, #eea3a3 0%,#490606 100%);
+  border: 4px solid  var(--vermelha);
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.ativa:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+
+
+
+
+.titulo {
+  margin-top:0px;
+  text-align:center;
+  color:rgba(255,253,0,0.96);
+  font-family: "Times", sans-serif;
+  font-size:18px;
+}
+
+
+.container {
+  display:inline-block;
+  /*float: center;*/
+  padding: 0px 0px;
+  margin-top:0px;
+  align-items: center;
+}
+
+.lista{
+  color: rgb(249,249,249);
+  text-align:justify;
+  font-size:14px;
+  padding: 0px 10px;
+  margin-top:0px;
+  margin:10px;
+}
+
+
+
+
+.menu {
+  float: left;
+  width: 18%;
+  text-align: center;
+  font-size:16px;
+  color: rgb(246,248,247);
+}
+
+.menu a {
+  background: linear-gradient(to bottom, #eea3a3 0%,#490606 100%);
+  padding: 3px;
+  margin-top: 3px;
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size:15px;
+}
+
+.centro {
+  float: left;
+  width: 55%;
+  padding: 0px 0px;
+  margin-top:0px;
+  align-items: center;
+  
+}
+
+.right {
+  background: linear-gradient(to bottom, #eea3a3 0%,#490606 100%);
+  color: white;
+  float: right;
+  width: 20%;
+  padding: 5px 5px;
+  margin-top: 0px;
+  text-align: justify;
+  font-size:14px;
+}
+
+.rodape {
+	text-align: justify;
+  font-size:14px;
+	padding: 5px 5px;
+  background: linear-gradient(to bottom, #eea3a3 0%,#490606 100%);
+  margin-top:15px;
+  color: black;
+  vertical-align: displayHeight;
+  height: height;
+  width: displayWidth;
+}
+
+
+.copyright {
+  text-align:center;
+	color: black;
+	font-size: 16px;
+	margin: 0px 0px;
+}

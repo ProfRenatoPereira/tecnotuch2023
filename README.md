@@ -1,2 +1,2 @@
-# tecnotuch2023
+# tecnotuchtuch
 Estudo de JavaScript.
