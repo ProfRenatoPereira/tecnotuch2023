@@ -4,7 +4,7 @@ const fireworks = [];
 let gravity;
 
 function setup() {
-  createCanvas(0.95*displayWidth, 0.05*displayHeight);
+  createCanvas(0.95*displayWidth, 0.15*displayHeight);
   gravity = createVector(0, 0.2);
   stroke(255);
   strokeWeight(1);
@@ -28,13 +28,34 @@ function draw() {
   background(11, 106, 136, 25);
   //clear();
   
+  
+  push();
+  textAlign(RIGHT,CENTER);
+  textSize(height*0.15);
+  translate(width*0.4,height*0.5);
+  rotate(sin(frameCount*(-0.04)));
+  text("TECNO", 0,0);
+  pop();
+
   push();
   textAlign(CENTER,CENTER);
-  textSize(height*0.5);
+  textSize(height*0.25);
   translate(width*0.5,height*0.5);
-  //rotate(frameCount*0.02);
-  text("TECNO TUCH TUCH!", 0,0);
+  rotate(sin(frameCount*0.08));
+  text("TUCH", 0,0);
   pop();
+
+  push();
+  textAlign(LEFT,CENTER);
+  textSize(height*0.15);
+  translate(width*0.6,height*0.5);
+  rotate(sin(frameCount*0.04));
+  text("TUCH", 0,0);
+  pop();
+
+
+
+
   
   if (random(1) < 0.05) {
     fireworks.push(new Firework());
@@ -52,7 +73,7 @@ function draw() {
 
 
 function mousePressed() {
-  if (mouseX > 0 && mouseX < displayWidth && mouseY > 0 && mouseY < 0.04*displayHeight) {
+  if (mouseX > 0 && mouseX < displayWidth && mouseY > 0 && mouseY < 0.08*displayHeight) {
     let fs = fullscreen();
     fullscreen(!fs);
 }
