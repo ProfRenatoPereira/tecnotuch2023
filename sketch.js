@@ -38,11 +38,3 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
 }
 
-
-
-function mousePressed() {
-  if (mouseX > 0 && mouseX < displayWidth && mouseY > 0 && mouseY < 0.35*displayHeight) {
-    let fs = fullscreen();
-    fullscreen(!fs);
-}
-}
