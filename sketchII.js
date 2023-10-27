@@ -52,7 +52,7 @@ function draw() {
 
 
 function mousePressed() {
-  if (mouseX > 0 && mouseX < displayWidth && mouseY > 0 && mouseY < 0.7*displayHeight) {
+  if (mouseX > 0 && mouseX < displayWidth && mouseY > 0 && mouseY < 0.4*displayHeight) {
     let fs = fullscreen();
     fullscreen(!fs);
 }
